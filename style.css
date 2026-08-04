@@ -1,0 +1,861 @@
+/* ===========================
+   Réglages généraux
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ===========================
+   Conteneur principal
+=========================== */
+
+.logos {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* ===========================
+   Les 4 panneaux
+=========================== */
+
+.carte {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ===========================
+   Taille des logos
+=========================== */
+
+.carte img {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+/* ===========================
+   Couleur des logos
+=========================== */
+
+/* Les trois premiers deviennent noirs */
+
+.blanc img,
+.gris-clair img,
+.gris-fonce img {
+    filter: brightness(0);
+}
+
+/* Le quatrième garde ses couleurs d'origine */
+
+.noir img {
+    filter: none;
+}
+
+
+/* ===========================
+   Couleur des panneaux
+=========================== */
+
+.blanc {
+    background-color: #ffffff;
+}
+
+.gris-clair {
+    background-color: #d9d9d9;
+}
+
+.gris-fonce {
+    background-color: #555555;
+}
+
+.noir {
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Version mobile
+=========================== */
+
+@media (max-width: 700px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .logos {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .carte {
+        min-height: 25vh;
+    }
+
+    .carte img {
+        width: 40%;
+        max-width: 200px;
+    }
+
+}
+
+/* ===========================
+   Page Collages
+=========================== */
+
+.page-collages {
+    margin: 0;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.grille-collages {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+
+    width: 100%;
+
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.case-collage {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1px;
+
+    background-color: #ffffff;
+
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.case-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===========================
+   Page Collages
+=========================== */
+
+.page-collages {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000000;
+    overflow-y: auto;
+}
+
+
+/* ===========================
+   Grille des collages
+=========================== */
+
+.grille-collages {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+
+    width: 100%;
+
+    gap: 0;
+    padding: 0;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Cases des collages
+=========================== */
+
+.case-collage {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Images
+=========================== */
+
+.case-collage img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    cursor: pointer;
+}
+
+
+/* ===========================
+   Visionneuse plein écran
+=========================== */
+
+.visionneuse {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 30px;
+
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.visionneuse.ouverte {
+    display: flex;
+}
+
+.visionneuse-image {
+    display: block;
+
+    max-width: 95%;
+    max-height: 95%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+body.visionneuse-active {
+    overflow: hidden;
+}
+
+
+/* ===========================
+   Tablette
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .grille-collages {
+        grid-template-columns: repeat(16, 1fr);
+    }
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 700px) {
+
+    .grille-collages {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .visionneuse {
+        padding: 10px;
+    }
+
+    .visionneuse-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+/* ===========================
+   Page Dessins
+=========================== */
+
+.page-dessins {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000000;
+    overflow-y: auto;
+}
+
+
+/* ===========================
+   Grille des dessins
+=========================== */
+
+.grille-dessins {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+
+    width: 100%;
+
+    gap: 0;
+    padding: 0;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Cases des dessins
+=========================== */
+
+.case-dessin {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Images de formats différents
+=========================== */
+
+.case-dessin img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    cursor: pointer;
+}
+
+
+/* ===========================
+   Visionneuse plein écran
+=========================== */
+
+.visionneuse-dessins {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 30px;
+
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.visionneuse-dessins.ouverte {
+    display: flex;
+}
+
+.visionneuse-dessin-image {
+    display: block;
+
+    max-width: 95%;
+    max-height: 95%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+body.visionneuse-active {
+    overflow: hidden;
+}
+
+
+/* ===========================
+   Tablette
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .grille-dessins {
+        grid-template-columns: repeat(16, 1fr);
+    }
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 700px) {
+
+    .grille-dessins {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .visionneuse-dessins {
+        padding: 10px;
+    }
+
+    .visionneuse-dessin-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+/* ===========================
+   Page Musique
+=========================== */
+
+.page-musique {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #000000;
+
+    overflow-y: auto;
+}
+
+
+/* ===========================
+   Grille des vidéos
+=========================== */
+
+.grille-musique {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+
+    width: 100%;
+
+    gap: 0;
+    padding: 0;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Cases des vidéos
+=========================== */
+
+.case-musique {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #000000;
+
+    cursor: pointer;
+}
+
+
+/* ===========================
+   Vidéos dans la grille
+=========================== */
+
+.case-musique video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Visionneuse vidéo
+=========================== */
+
+.visionneuse-musique {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 30px;
+
+    background-color: rgba(0, 0, 0, 0.97);
+}
+
+.visionneuse-musique.ouverte {
+    display: flex;
+}
+
+.visionneuse-video {
+    display: block;
+
+    max-width: 95%;
+    max-height: 95%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #000000;
+}
+
+body.visionneuse-active {
+    overflow: hidden;
+}
+
+
+/* ===========================
+   Tablette
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .grille-musique {
+        grid-template-columns: repeat(16, 1fr);
+    }
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 700px) {
+
+    .grille-musique {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .visionneuse-musique {
+        padding: 10px;
+    }
+
+    .visionneuse-video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+/* ===========================
+   Page Écrits
+=========================== */
+
+.page-ecrits {
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #000000;
+}
+
+.page-ecrits *,
+.page-ecrits *::before,
+.page-ecrits *::after {
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   Grille
+=========================== */
+
+.grille-ecrits {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    gap: 0;
+
+    background-color: #000000;
+}
+
+
+/* ===========================
+   Cases
+=========================== */
+
+.case-ecrit {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    outline: 0;
+
+    overflow: hidden;
+
+    background-color: #000000;
+
+    cursor: pointer;
+    appearance: none;
+}
+
+
+/* ===========================
+   Miniatures
+=========================== */
+
+.miniature-ecrit-image,
+.miniature-ecrit-pdf {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+
+    background-color: #000000;
+
+    pointer-events: none;
+}
+
+.chargement-miniature-pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #ffffff;
+    background-color: #111111;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+
+    pointer-events: none;
+}
+
+
+/* ===========================
+   Visionneuse
+=========================== */
+
+.visionneuse-ecrits {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 24px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background-color: rgba(0, 0, 0, 0.98);
+}
+
+.visionneuse-ecrits.ouverte {
+    display: block;
+}
+
+.contenu-visionneuse-ecrits {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    min-height: 100%;
+
+    margin: 0 auto;
+}
+
+
+/* ===========================
+   Image ouverte
+=========================== */
+
+.visionneuse-ecrits-image {
+    display: none;
+
+    max-width: 95vw;
+    max-height: calc(100vh - 48px);
+
+    width: auto;
+    height: auto;
+
+    margin: auto;
+
+    object-fit: contain;
+}
+
+.visionneuse-ecrits-image.visible {
+    display: block;
+}
+
+
+/* ===========================
+   PDF ouvert
+=========================== */
+
+.visionneuse-ecrits-pdf {
+    display: none;
+
+    width: min(90vw, 1200px);
+
+    margin: 0 auto;
+    padding: 0;
+
+    background-color: #000000;
+}
+
+.visionneuse-ecrits-pdf.visible {
+    display: block;
+}
+
+.page-pdf {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #000000;
+}
+
+.page-pdf canvas {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+}
+
+.chargement-pdf-complet,
+.erreur-pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 70vh;
+
+    color: #ffffff;
+    background-color: #000000;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* Empêche le défilement de la page derrière */
+
+body.visionneuse-active {
+    overflow: hidden;
+}
+
+
+/* ===========================
+   Tablette
+=========================== */
+
+@media (max-width: 1200px) {
+    .grille-ecrits {
+        grid-template-columns: repeat(16, 1fr);
+    }
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 700px) {
+    .grille-ecrits {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .visionneuse-ecrits {
+        padding: 8px;
+    }
+
+    .visionneuse-ecrits-pdf {
+        width: 100%;
+    }
+
+    .visionneuse-ecrits-image {
+        max-width: 100%;
+        max-height: calc(100vh - 16px);
+    }
+}
