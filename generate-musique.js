@@ -1,23 +1,94 @@
 const fs = require("fs");
 const path = require("path");
 
-const dossierMusique = path.join(__dirname, "musique");
-const fichierListe = path.join(__dirname, "musique-list.js");
 
-const extensionsVideos = /\.(mp4|webm|ogg|mov)$/i;
+/* ===========================
+   Emplacements
+=========================== */
+
+const dossierMusique =
+    path.join(__dirname, "musique");
+
+const fichierListe =
+    path.join(
+        __dirname,
+        "musique-list.js"
+    );
+
+
+/* ===========================
+   Extensions autorisées
+=========================== */
+
+const extensionsVideos =
+    /\.(mp4|webm|ogg)$/i;
+
+
+/* ===========================
+   Vérification du dossier
+=========================== */
+
+if (!fs.existsSync(dossierMusique)) {
+
+    console.error(
+        'Le dossier "musique" est introuvable.'
+    );
+
+    process.exit(1);
+
+}
+
+
+/* ===========================
+   Lecture des vidéos
+=========================== */
 
 const fichiers = fs
     .readdirSync(dossierMusique)
-    .filter((nomFichier) => extensionsVideos.test(nomFichier))
-    .sort((a, b) =>
-        a.localeCompare(b, "fr", {
-            numeric: true,
-            sensitivity: "base"
-        })
-    );
+    .filter((nomFichier) => {
+
+        const cheminComplet =
+            path.join(
+                dossierMusique,
+                nomFichier
+            );
+
+        return (
+            fs.statSync(
+                cheminComplet
+            ).isFile() &&
+            extensionsVideos.test(
+                nomFichier
+            )
+        );
+
+    })
+    .sort((a, b) => {
+
+        return a.localeCompare(
+            b,
+            "fr",
+            {
+                numeric: true,
+                sensitivity: "base"
+            }
+        );
+
+    });
+
+
+/* ===========================
+   Création de musique-list.js
+=========================== */
 
 const contenu =
-    `window.musiqueFiles = ${JSON.stringify(fichiers, null, 4)};\n`;
+`window.musiqueFiles = ${JSON.stringify(
+    fichiers,
+    null,
+    4
+)};
+`;
+
 
 fs.writeFileSync(
     fichierListe,
@@ -25,6 +96,7 @@ fs.writeFileSync(
     "utf8"
 );
 
+
 console.log(
-    `${fichiers.length} vidéos ajoutées à la galerie musicale.`
+    `${fichiers.length} vidéo(s) ajoutée(s) à la galerie musicale.`
 );

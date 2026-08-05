@@ -452,45 +452,67 @@ body.visionneuse-active {
 
 .page-musique {
     margin: 0;
+
     min-height: 100vh;
 
-    background-color: #000000;
-
     overflow-y: auto;
+
+    background-color: #000000;
+}
+
+
+.page-musique *,
+.page-musique *::before,
+.page-musique *::after {
+    box-sizing: border-box;
 }
 
 
 /* ===========================
-   Grille des vidéos
+   Grille
 =========================== */
 
 .grille-musique {
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+
+    grid-template-columns:
+        repeat(24, minmax(0, 1fr));
 
     width: 100%;
 
-    gap: 0;
+    margin: 0;
     padding: 0;
+
+    gap: 0;
 
     background-color: #000000;
 }
 
 
 /* ===========================
-   Cases des vidéos
+   Cases
 =========================== */
 
 .case-musique {
-    aspect-ratio: 1 / 1;
+    position: relative;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    margin: 0;
     padding: 0;
 
+    border: 0;
+    outline: 0;
+
     overflow: hidden;
+
+    appearance: none;
 
     background-color: #000000;
 
@@ -498,30 +520,51 @@ body.visionneuse-active {
 }
 
 
-/* ===========================
-   Vidéos dans la grille
-=========================== */
+.case-musique:hover,
+.case-musique:focus,
+.case-musique:active {
+    margin: 0;
+    padding: 0;
 
-.case-musique video {
-    display: block;
+    border: 0;
+    outline: 0;
 
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-
-    pointer-events: none;
+    transform: none;
 
     background-color: #000000;
 }
 
 
 /* ===========================
-   Visionneuse vidéo
+   Miniatures vidéo
+=========================== */
+
+.miniature-video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+    object-fit: contain;
+
+    background-color: #000000;
+
+    pointer-events: none;
+}
+
+
+/* ===========================
+   Visionneuse
 =========================== */
 
 .visionneuse-musique {
     position: fixed;
+
     inset: 0;
 
     z-index: 1000;
@@ -533,26 +576,46 @@ body.visionneuse-active {
     width: 100vw;
     height: 100vh;
 
-    padding: 30px;
+    margin: 0;
+    padding: 24px;
 
-    background-color: rgba(0, 0, 0, 0.97);
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.98
+    );
 }
+
 
 .visionneuse-musique.ouverte {
     display: flex;
 }
 
+
+/* ===========================
+   Vidéo ouverte
+=========================== */
+
 .visionneuse-video {
     display: block;
 
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 95vw;
+    max-height: 95vh;
 
     width: auto;
     height: auto;
 
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
     background-color: #000000;
 }
+
+
+/* Bloque le défilement derrière */
 
 body.visionneuse-active {
     overflow: hidden;
@@ -566,7 +629,8 @@ body.visionneuse-active {
 @media (max-width: 1200px) {
 
     .grille-musique {
-        grid-template-columns: repeat(16, 1fr);
+        grid-template-columns:
+            repeat(16, minmax(0, 1fr));
     }
 
 }
@@ -579,12 +643,15 @@ body.visionneuse-active {
 @media (max-width: 700px) {
 
     .grille-musique {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns:
+            repeat(8, minmax(0, 1fr));
     }
 
+
     .visionneuse-musique {
-        padding: 10px;
+        padding: 8px;
     }
+
 
     .visionneuse-video {
         max-width: 100%;
