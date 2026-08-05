@@ -14,6 +14,7 @@ window.collageFiles = [
     "FSQT.png",
     "KSF.png",
     "njpio.png",
+    "oiluhkg.png",
     "OR.png",
     "ORHDEMPP.png",
     "OYPA.png",
