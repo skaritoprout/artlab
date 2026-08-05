@@ -1,4 +1,5 @@
-const grilleMusique = document.querySelector(".grille-musique");
+const grilleMusique =
+    document.querySelector(".grille-musique");
 
 const visionneuseMusique =
     document.querySelector(".visionneuse-musique");
@@ -6,103 +7,175 @@ const visionneuseMusique =
 const videoVisionneuse =
     document.querySelector(".visionneuse-video");
 
-const grilleMusique =
-    document.querySelector(".grille-musique");
+
+/* Nettoie la grille avant de créer les vidéos */
 
 grilleMusique.innerHTML = "";
 
-/* Mélange aléatoire des vidéos */
 
-const videosMelangees = [...window.musiqueFiles];
+/* Vérification de la liste */
 
-for (let i = videosMelangees.length - 1; i > 0; i--) {
+const videosDisponibles =
+    Array.isArray(window.musiqueFiles)
+        ? [...window.musiqueFiles]
+        : [];
 
+
+/* Mélange aléatoire */
+
+for (
+    let i = videosDisponibles.length - 1;
+    i > 0;
+    i--
+) {
     const positionAleatoire =
         Math.floor(Math.random() * (i + 1));
 
     [
-        videosMelangees[i],
-        videosMelangees[positionAleatoire]
+        videosDisponibles[i],
+        videosDisponibles[positionAleatoire]
     ] = [
-        videosMelangees[positionAleatoire],
-        videosMelangees[i]
+        videosDisponibles[positionAleatoire],
+        videosDisponibles[i]
     ];
-
 }
 
 
-/* Création automatique de la grille */
+/* Création de la grille */
 
-videosMelangees.forEach((nomFichier) => {
+videosDisponibles.forEach((nomFichier) => {
 
-    const caseMusique = document.createElement("div");
-    caseMusique.classList.add("case-musique");
+    const cheminVideo =
+        `musique/${encodeURIComponent(nomFichier)}`;
 
-    const video = document.createElement("video");
+    const caseMusique =
+        document.createElement("div");
 
-    video.src = `musique/${encodeURIComponent(nomFichier)}`;
+    caseMusique.className = "case-musique";
+
+
+    const video =
+        document.createElement("video");
+
+    video.src = cheminVideo;
     video.muted = true;
     video.preload = "metadata";
     video.playsInline = true;
+
+
+    /*
+     * Permet d’afficher une image extraite
+     * du début de la vidéo.
+     */
+
+    video.addEventListener(
+        "loadedmetadata",
+        () => {
+
+            if (
+                Number.isFinite(video.duration) &&
+                video.duration > 0
+            ) {
+                video.currentTime =
+                    Math.min(
+                        1,
+                        video.duration / 2
+                    );
+            }
+
+        }
+    );
+
+
+    /*
+     * Si une vidéo est introuvable,
+     * sa case est supprimée.
+     */
+
+    video.addEventListener(
+        "error",
+        () => {
+
+            console.error(
+                `Impossible de charger : ${nomFichier}`
+            );
+
+            caseMusique.remove();
+
+        }
+    );
+
 
     caseMusique.appendChild(video);
     grilleMusique.appendChild(caseMusique);
 
 
-    /* Affiche une image de la vidéo dans la grille */
+    /* Ouverture en grand */
 
-    video.addEventListener("loadedmetadata", () => {
+    caseMusique.addEventListener(
+        "click",
+        async () => {
 
-        if (video.duration > 1) {
-            video.currentTime = Math.min(1, video.duration / 2);
+            videoVisionneuse.src =
+                cheminVideo;
+
+            visionneuseMusique.classList.add(
+                "ouverte"
+            );
+
+            visionneuseMusique.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+            document.body.classList.add(
+                "visionneuse-active"
+            );
+
+            try {
+                await videoVisionneuse.play();
+            } catch (erreur) {
+                console.log(
+                    "La lecture attend une action de l’utilisateur.",
+                    erreur
+                );
+            }
+
+        }
+    );
+
+});
+
+
+/* Fermeture en cliquant sur le fond */
+
+visionneuseMusique.addEventListener(
+    "click",
+    (event) => {
+
+        if (
+            event.target ===
+            visionneuseMusique
+        ) {
+            fermerVisionneuseMusique();
         }
 
-    });
-
-
-    /* Ouverture de la vidéo en grand */
-
-    caseMusique.addEventListener("click", () => {
-
-        videoVisionneuse.src =
-            `musique/${encodeURIComponent(nomFichier)}`;
-
-        visionneuseMusique.classList.add("ouverte");
-
-        visionneuseMusique.setAttribute(
-            "aria-hidden",
-            "false"
-        );
-
-        document.body.classList.add("visionneuse-active");
-
-        videoVisionneuse.play();
-
-    });
-
-});
-
-
-/* Fermeture en cliquant sur le fond noir */
-
-visionneuseMusique.addEventListener("click", (event) => {
-
-    if (event.target === visionneuseMusique) {
-        fermerVisionneuseMusique();
     }
+);
 
-});
 
+/* Fermeture avec Échap */
 
-/* Fermeture avec la touche Échap */
+document.addEventListener(
+    "keydown",
+    (event) => {
 
-document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            fermerVisionneuseMusique();
+        }
 
-    if (event.key === "Escape") {
-        fermerVisionneuseMusique();
     }
-
-});
+);
 
 
 /* Fonction de fermeture */
@@ -110,16 +183,25 @@ document.addEventListener("keydown", (event) => {
 function fermerVisionneuseMusique() {
 
     videoVisionneuse.pause();
-    videoVisionneuse.removeAttribute("src");
+
+    videoVisionneuse.removeAttribute(
+        "src"
+    );
+
     videoVisionneuse.load();
 
-    visionneuseMusique.classList.remove("ouverte");
+
+    visionneuseMusique.classList.remove(
+        "ouverte"
+    );
 
     visionneuseMusique.setAttribute(
         "aria-hidden",
         "true"
     );
 
-    document.body.classList.remove("visionneuse-active");
+    document.body.classList.remove(
+        "visionneuse-active"
+    );
 
 }
