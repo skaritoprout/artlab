@@ -6,6 +6,10 @@ const visionneuseMusique =
 const videoVisionneuse =
     document.querySelector(".visionneuse-video");
 
+const grilleMusique =
+    document.querySelector(".grille-musique");
+
+grilleMusique.innerHTML = "";
 
 /* Mélange aléatoire des vidéos */
 

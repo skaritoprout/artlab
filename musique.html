@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Musique</title>
 
@@ -14,18 +17,20 @@
 
     <main class="grille-musique"></main>
 
-    <div class="visionneuse-musique" aria-hidden="true">
-
+    <div
+        class="visionneuse-musique"
+        aria-hidden="true"
+    >
         <video
             class="visionneuse-video"
             controls
             playsinline
         ></video>
-
     </div>
 
-    <script src="musique-list.js"></script>
-    <script src="musique-page.js"></script>
+    <!-- Le numéro force le navigateur à charger la nouvelle version -->
+    <script src="musique-list.js?v=2"></script>
+    <script src="musique-page.js?v=2"></script>
 
 </body>
 
