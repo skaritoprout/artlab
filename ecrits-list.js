@@ -1,7 +1,9 @@
 window.ecritsFiles = [
+    "a.png",
     "bjap (1).png",
     "j’sptc’qj’f,j amdr. tml,mlv.png",
     "Jsppjcp àtcqm d.cmlci. jsbq m,mpc mm,on ldm,m. cmpqj vqa. o,jpfe lda,ej ah,dpep..png",
+    "lrsmam.leatc,pd,jc,mfmaln.jnpdffàdni,jada.lca,coddpqptmso.jsbdls,lmfbpam.jsqjvfpafàpdcv,jlt.clcdmp.lrdma..png",
     "nn mais c une blague (1).png",
     "pjrlàrf,p jmapdl ipcu a,lcslpq jp,ouf,jsp. etcjpl gecm,emmm rdcs,jdpo n..png",
     "Quelques abandons - Fou qui hurle demande clope et arrête.pdf",
