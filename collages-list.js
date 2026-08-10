@@ -44,6 +44,7 @@ window.collageFiles = [
     "TTMU.png",
     "TTPL.png",
     "TTUO.png",
+    "uyg.png",
     "WR.png",
     "zerv.png",
     "zret.png"
