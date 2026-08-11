@@ -26,6 +26,7 @@ window.dessinFiles = [
     "25.png",
     "26.png",
     "27.png",
+    "94.png",
     "95.png",
     "96.png",
     "97.png",

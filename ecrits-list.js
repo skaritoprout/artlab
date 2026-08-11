@@ -1,6 +1,8 @@
 window.ecritsFiles = [
     "a.png",
     "bjap (1).png",
+    "ddjjmb cur.çf lqjnmsp b,acnm.l fe,np.ef jnràp,àpu «r».jnjà mdtf. ivfrlcu j,mlfm s..png",
+    "ecm,jlup.png",
     "j’sptc’qj’f,j amdr. tml,mlv.png",
     "jdmplt.p-eqjvsdlmdl,cnps.pjldnjr,jcmnrj.jbmspslrhjmm,cnpàlqjve.umqmd.png",
     "Jsppjcp àtcqm d.cmlci. jsbq m,mpc mm,on ldm,m. cmpqj vqa. o,jpfe lda,ej ah,dpep..png",
@@ -8,6 +10,7 @@ window.ecritsFiles = [
     "lrsmam.leatc,pd,jc,mfmaln.jnpdffàdni,jada.lca,coddpqptmso.jsbdls,lmfbpam.jsqjvfpafàpdcv,jlt.clcdmp.lrdma..png",
     "nn mais c une blague (1).png",
     "pjrlàrf,p jmapdl ipcu a,lcslpq jp,ouf,jsp. etcjpl gecm,emmm rdcs,jdpo n..png",
+    "Quelques abandons - Fils en slibard annonce à sa mère qu’il est viré de l’école.pdf",
     "Quelques abandons - Fou qui hurle demande clope et arrête.pdf",
     "Quelques abandons - là maintenant.pdf",
     "Quelques abandons - lave pied.pdf",

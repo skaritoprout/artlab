@@ -9,6 +9,7 @@ window.collageFiles = [
     "CPJC.png",
     "DEM.png",
     "DFT.png",
+    "dvsf.png",
     "eobji.png",
     "FMS.png",
     "FSQT.png",
