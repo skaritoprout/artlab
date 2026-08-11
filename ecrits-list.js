@@ -1,6 +1,8 @@
 window.ecritsFiles = [
     "a.png",
     "bjap (1).png",
+    "Bo pour tout le monde - 1.pdf",
+    "Bo pour tout le monde - 2.pdf",
     "ddjjmb cur.çf lqjnmsp b,acnm.l fe,np.ef jnràp,àpu «r».jnjà mdtf. ivfrlcu j,mlfm s..png",
     "ecm,jlup.png",
     "j’sptc’qj’f,j amdr. tml,mlv.png",
@@ -10,6 +12,7 @@ window.ecritsFiles = [
     "lrsmam.leatc,pd,jc,mfmaln.jnpdffàdni,jada.lca,coddpqptmso.jsbdls,lmfbpam.jsqjvfpafàpdcv,jlt.clcdmp.lrdma..png",
     "nn mais c une blague (1).png",
     "pjrlàrf,p jmapdl ipcu a,lcslpq jp,ouf,jsp. etcjpl gecm,emmm rdcs,jdpo n..png",
+    "Pour moi mais aussi pour vous j'dois l'avouer - 1.pdf",
     "Quelques abandons - Fils en slibard annonce à sa mère qu’il est viré de l’école.pdf",
     "Quelques abandons - Fou qui hurle demande clope et arrête.pdf",
     "Quelques abandons - là maintenant.pdf",
