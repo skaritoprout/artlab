@@ -11,6 +11,7 @@ window.collageFiles = [
     "DFT.png",
     "dvsf.png",
     "eazr.png",
+    "egj.png",
     "eobji.png",
     "FMS.png",
     "FSQT.png",

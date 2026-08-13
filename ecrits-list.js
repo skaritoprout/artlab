@@ -1,5 +1,6 @@
 window.ecritsFiles = [
     "a.png",
+    "ajms.png",
     "bjap (1).png",
     "Bo pour tout le monde - 1.pdf",
     "Bo pour tout le monde - 2.pdf",
@@ -20,5 +21,6 @@ window.ecritsFiles = [
     "Quelques abandons - Le mec dans le métro qui croit que y’a un mec avec une bombe mais finalement il l’accepte .pdf",
     "Quelques abandons - Le résistant à terre qui se laisse tuer.pdf",
     "Une captivité - jette un morceau de kebab sur Hiroshima.pdf",
-    "Une captivité - pommeau.pdf"
+    "Une captivité - pommeau.pdf",
+    "Une captivité - premiere fois avec les colosse.pdf"
 ];
