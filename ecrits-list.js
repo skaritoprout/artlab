@@ -22,5 +22,6 @@ window.ecritsFiles = [
     "Quelques abandons - Le résistant à terre qui se laisse tuer.pdf",
     "Une captivité - jette un morceau de kebab sur Hiroshima.pdf",
     "Une captivité - pommeau.pdf",
-    "Une captivité - premiere fois avec les colosse.pdf"
+    "Une captivité - premiere fois avec les colosse.pdf",
+    "Une captivité - promener chien trop tôt.pdf"
 ];
