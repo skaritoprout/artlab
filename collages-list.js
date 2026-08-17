@@ -18,6 +18,8 @@ window.collageFiles = [
     "FMS.png",
     "FSQT.png",
     "KSF.png",
+    "mmn.png",
+    "ngbbb.png",
     "njpio.png",
     "oiluhkg.png",
     "OR.png",
