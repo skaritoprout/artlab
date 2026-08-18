@@ -56,6 +56,7 @@ window.collageFiles = [
     "vgbf.png",
     "WR.png",
     "zda.png",
+    "zefjikj.png",
     "zerv.png",
     "zret.png"
 ];
