@@ -41,6 +41,7 @@ window.collageFiles = [
     "raconter des histoires et répéter.png",
     "RBM.png",
     "rser.png",
+    "skqdfjsh.png",
     "TATSPI.png",
     "til.png",
     "TRA 1.1.png",
