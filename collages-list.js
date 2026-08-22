@@ -3,6 +3,7 @@ window.collageFiles = [
     "AM.png",
     "aprok.png",
     "AV.png",
+    "azpkofe.png",
     "BRONCHIOLITE 1.png",
     "BRONCHIOLITE 2.png",
     "BRONCHIOLITE 3.png",
