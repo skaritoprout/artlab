@@ -38,6 +38,7 @@ window.ecritsFiles = [
     "Quelques abandons - lettre à André.pdf",
     "Quelques abandons - manque d'inspi dans le jardin.pdf",
     "Une captivité - arrache doigt.pdf",
+    "Une captivité - j'arrête la mise en scène cayer je parle vraiment là.pdf",
     "Une captivité - jette un morceau de kebab sur Hiroshima.pdf",
     "Une captivité - pommeau.pdf",
     "Une captivité - premiere fois avec les colosse.pdf",
