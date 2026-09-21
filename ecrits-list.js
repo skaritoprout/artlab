@@ -31,6 +31,7 @@ window.ecritsFiles = [
     "Quelques abandons - amour pour le kebab.pdf",
     "Quelques abandons - Fils en slibard annonce à sa mère qu’il est viré de l’école.pdf",
     "Quelques abandons - Fou qui hurle demande clope et arrête.pdf",
+    "Quelques abandons - j'suis parti.pdf",
     "Quelques abandons - là maintenant.pdf",
     "Quelques abandons - lave pied.pdf",
     "Quelques abandons - Le mec dans le métro qui croit que y’a un mec avec une bombe mais finalement il l’accepte .pdf",
@@ -40,6 +41,10 @@ window.ecritsFiles = [
     "Une captivité - arrache doigt.pdf",
     "Une captivité - j'arrête la mise en scène cayer je parle vraiment là.pdf",
     "Une captivité - jette un morceau de kebab sur Hiroshima.pdf",
+    "Une captivité - kalash meu.pdf",
+    "Une captivité - meu claque fenêtre.pdf",
+    "Une captivité - meu nihiliste.pdf",
+    "Une captivité - meu philosophe lol.pdf",
     "Une captivité - pommeau.pdf",
     "Une captivité - premiere fois avec les colosse.pdf",
     "Une captivité - promener chien trop tôt.pdf"
