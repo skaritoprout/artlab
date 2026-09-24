@@ -36,6 +36,7 @@ window.collageFiles = [
     "OR.png",
     "ORHDEMPP.png",
     "OYPA.png",
+    "pasyieghzfe.png",
     "PE 1.png",
     "PE 2.png",
     "PE 3.png",
