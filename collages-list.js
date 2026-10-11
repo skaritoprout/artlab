@@ -1,4 +1,5 @@
 window.collageFiles = [
+    "20261007_211451.jpg",
     "ac.png",
     "AM 2.png",
     "AM.png",
