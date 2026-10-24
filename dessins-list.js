@@ -214,6 +214,7 @@ window.dessinFiles = [
     "20261012_220544.jpg",
     "20261020_195942.jpg",
     "20261021_211432.jpg",
+    "egbrgezf.png",
     "IMG-20231222-WA0002.jpg",
     "IMG-20231223-WA0079.jpg",
     "ntm.jpeg",
