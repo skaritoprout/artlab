@@ -92,6 +92,8 @@ window.ecritsFiles = [
     "Pour moi mais aussi pour vous j'dois l'avouer - 26.pdf",
     "Pour moi mais aussi pour vous j'dois l'avouer - 27.pdf",
     "Pour moi mais aussi pour vous j'dois l'avouer - 28.pdf",
+    "Pour moi mais aussi pour vous j'dois l'avouer - 29.pdf",
+    "Pour moi mais aussi pour vous j'dois l'avouer - 30.pdf",
     "Quelques abandons - amour pour le kebab.pdf",
     "Quelques abandons - Fils en slibard annonce à sa mère qu’il est viré de l’école.pdf",
     "Quelques abandons - Fou qui hurle demande clope et arrête.pdf",
