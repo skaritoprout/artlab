@@ -152,6 +152,12 @@ window.ecritsFiles = [
     "20261102_145145.png",
     "20261102_145213.png",
     "20261102_145239.png",
+    "20261102_145303.png",
+    "20261102_145322.png",
+    "20261102_145346.png",
+    "20261102_145416.png",
+    "20261102_145443.png",
+    "20261102_145513.png",
     "Bo pour tout le monde - 1.pdf",
     "Bo pour tout le monde - 2.pdf",
     "Pour moi mais aussi pour vous j'dois l'avouer - 1.pdf",
@@ -206,5 +212,6 @@ window.ecritsFiles = [
     "Une captivité - meu philosophe lol.pdf",
     "Une captivité - pommeau.pdf",
     "Une captivité - premiere fois avec les colosse.pdf",
-    "Une captivité - promener chien trop tôt.pdf"
+    "Une captivité - promener chien trop tôt.pdf",
+    "WhatsApp Image 2026-09-27 at 12.43.17.png"
 ];
