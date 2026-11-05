@@ -213,5 +213,6 @@ window.ecritsFiles = [
     "Une captivité - pommeau.pdf",
     "Une captivité - premiere fois avec les colosse.pdf",
     "Une captivité - promener chien trop tôt.pdf",
+    "Une captivité - se débattre.pdf",
     "WhatsApp Image 2026-09-27 at 12.43.17.png"
 ];
