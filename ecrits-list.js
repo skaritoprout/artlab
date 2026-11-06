@@ -192,7 +192,6 @@ window.ecritsFiles = [
     "Quelques abandons - Fils en slibard annonce à sa mère qu’il est viré de l’école.pdf",
     "Quelques abandons - Fou qui hurle demande clope et arrête.pdf",
     "Quelques abandons - j'suis parti.pdf",
-    "Quelques abandons - là maintenant.pdf",
     "Quelques abandons - lave pied.pdf",
     "Quelques abandons - Le mec dans le métro qui croit que y’a un mec avec une bombe mais finalement il l’accepte .pdf",
     "Quelques abandons - Le résistant à terre qui se laisse tuer.pdf",

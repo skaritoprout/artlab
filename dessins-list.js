@@ -233,5 +233,6 @@ window.dessinFiles = [
     "Sans titre.png",
     "vgyu.png",
     "yhtgr.png",
-    "yjthrg.png"
+    "yjthrg.png",
+    "ythrg.png"
 ];
