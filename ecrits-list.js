@@ -209,6 +209,7 @@ window.ecritsFiles = [
     "Une captivité - meu claque fenêtre.pdf",
     "Une captivité - meu nihiliste.pdf",
     "Une captivité - meu philosophe lol.pdf",
+    "Une captivité - monter escalier.pdf",
     "Une captivité - pommeau.pdf",
     "Une captivité - premiere fois avec les colosse.pdf",
     "Une captivité - promener chien trop tôt.pdf",
