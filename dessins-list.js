@@ -230,6 +230,7 @@ window.dessinFiles = [
     "IMG-20231222-WA0002.jpg",
     "IMG-20231223-WA0079.jpg",
     "ntm.jpeg",
+    "rtheztyrjh(eytyhregf.png",
     "Sans titre.png",
     "vgyu.png",
     "yhtgr.png",
