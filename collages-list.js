@@ -31,6 +31,7 @@ window.collageFiles = [
     "erui.png",
     "erzf.png",
     "fgdezdebfrge.png",
+    "fghdrgsefq.png",
     "FMS.png",
     "FSQT.png",
     "ftdrg.png",
