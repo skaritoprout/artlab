@@ -105,6 +105,7 @@ window.collageFiles = [
     "tuyrjhe.png",
     "tyreg.png",
     "tyrhe.png",
+    "tyrhezfad.png",
     "ukyjth.png",
     "urjte.png",
     "uyg.png",
