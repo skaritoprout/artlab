@@ -120,6 +120,7 @@ window.collageFiles = [
     "ythr.png",
     "ytrheeee.png",
     "yukjthr.png",
+    "yuktrhezgfa.png",
     "zda.png",
     "zefjikj.png",
     "zerv.png",
