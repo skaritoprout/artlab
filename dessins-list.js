@@ -227,6 +227,8 @@ window.dessinFiles = [
     "20261104_225928.jpg",
     "dtry.png",
     "egbrgezf.png",
+    "hrtezf.jpg",
+    "iè-('ytér.jpg",
     "IMG-20231222-WA0002.jpg",
     "IMG-20231223-WA0079.jpg",
     "ntm.jpeg",
@@ -235,5 +237,6 @@ window.dessinFiles = [
     "vgyu.png",
     "yhtgr.png",
     "yjthrg.png",
-    "ythrg.png"
+    "ythrg.png",
+    "ytrhegz.jpg"
 ];

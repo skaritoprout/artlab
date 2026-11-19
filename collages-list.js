@@ -42,6 +42,8 @@ window.collageFiles = [
     "gtf.png",
     "gtr.png",
     "hytgre.png",
+    "iuyktrhezgfa.png",
+    "iuythrge.png",
     "j,hngbvfdc.png",
     "jtrhetzr.png",
     "KSF.png",
